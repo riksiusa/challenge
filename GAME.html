@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+    />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./css/stylee.css" />
+    <link rel="stylesheet" href="./css/game.css" />
+
+    <!-- Bar Title -->
+    <title>Binar Challenge : Chapter 4 -- ROCK, PAPER, SCISSORS! SHOOT!</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <a href="challenge-panca.html"><span class="chevron left"></span></a>
+        <img src="./assets4/logo 1.png" alt="" class="icon-nav" />
+        <div class="position-relative">
+        <span class="game-brand">ROCK PAPER SCISSORS</span>
+        </div>
+    </nav>
+    </header>
+    <div class="suit-game-window container">
+    <div class="row">
+        <div class="col-4 suit-left">
+        <div class="row">
+            <div class="col spacer-icon tulisan-player">
+            <h2>PLAYER 1</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col spacer-icon">
+            <div class="choice batu player" onclick="player.playBatu()">
+                <img
+                class="suit-icon batu"
+                src="./assets4/batu.png"
+                alt=""
+                />
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col spacer-icon">
+            <div class="choice kertas player" onclick="player.playKertas()">
+                <img
+                class="suit-icon kertas"
+                src="./assets4/kertas.png"
+                alt=""
+                />
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col spacer-icon">
+            <div class="choice gunting player" onclick="player.playGunting()">
+                <img
+                class="suit-icon gunting"
+                src="./assets4/gunting.png"
+                alt=""
+                />
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-4 suit-center align-self-center">
+        <div class="versus-text-div">
+            <h1 class="versus-text">VS</h1>
+        </div>
+        <div class="player-win col-4 py-3">
+            <h1 style="margin-bottom: 0.2em">PLAYER 1</h1>
+            <h1>WIN</h1>
+        </div>
+        <div class="bot-win col-4">
+            <h1 style="margin-bottom: 0.2em">COM</h1>
+            <h1>WIN</h1>
+        </div>
+        <div class="draw col-4">
+            <h1>DRAW</h1>
+        </div>
+        </div>
+        <div class="col-4 suit-right">
+        <div class="row">
+            <div class="col spacer-icon">
+            <h2>COM</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col spacer-icon">
+            <div class="choice batu bot">
+                <img
+                class="suit-icon batu"
+                src="./assets4/batu.png"
+                alt=""
+                />
+            </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col spacer-icon">
+              <div class="choice kertas bot">
+                <img
+                  class="suit-icon kertas"
+                  src="./assets4/kertas.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col spacer-icon">
+              <div class="choice gunting bot">
+                <img
+                  class="suit-icon gunting"
+                  src="./assets4/gunting.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="refresher">
+            <img
+              class="refresh-icon"
+              src="./assets4/refresh.png"
+              alt=""
+              onclick="player.refresher()"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/game.js"></script>
+    <!-- if you want to switch the script to the old one,
+      please remember to remove the onclick trigger in every player's choices and the refresher-->
+    <!-- <script src="./assets/js/game_suit.js"></script> -->
+    <script src="./js/follback.js"></script>
+  </body>
+</html>

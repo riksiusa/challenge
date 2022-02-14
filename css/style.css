@@ -1,0 +1,109 @@
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+#hero {
+  position: relative;
+  color: white;
+  background-image: url(../assets/main-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 20vh;
+  padding-top: 20vh;
+}
+
+.hero-content {
+  top: 30%;
+}
+
+.ground-level-center {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#the-games {
+  position: relative;
+  color: white;
+  background-image: url(../assets/the-games-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 20vh;
+  padding-top: 20vh;
+}
+
+#features {
+  position: relative;
+  color: white;
+  background-image: url(../assets/features.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 20vh;
+  padding-top: 20vh;
+}
+
+#requirements {
+  position: relative;
+  color: white;
+  background-image: url(../assets/requirements.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 20vh;
+  padding-top: 20vh;
+}
+
+#top-score {
+  position: relative;
+  color: white;
+  background-image: url(../assets/top-score-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 20vh;
+  padding-top: 20vh;
+}
+
+#newslater {
+  position: relative;
+  color: white;
+  background-image: url(../assets/the-games-bg.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100%;
+}
+
+@media screen and (min-height: 600px) {
+  #hero {
+    height: 100vh;
+  }
+
+  #features {
+    height: 100vh;
+  }
+}
+
+@media screen and (min-height: 767px) {
+  #the-games {
+    height: 100vh;
+  }
+
+  #requirements {
+    height: 100vh;
+  }
+
+  #top-score {
+    height: 100vh;
+  }
+}
